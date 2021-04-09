@@ -122,15 +122,13 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nJN-th-c5K" userLabel="Timer View">
                                         <rect key="frame" x="0.0" y="571.5" width="374" height="246.5"/>
                                         <subviews>
-                                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="0Pu-28-4QQ">
+                                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" translatesAutoresizingMaskIntoConstraints="NO" id="0Pu-28-4QQ">
                                                 <rect key="frame" x="0.0" y="121.5" width="374" height="4"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="374" id="RXO-fl-aoH"/>
-                                                    <constraint firstAttribute="height" constant="3" id="Tcs-aM-2Lm"/>
                                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="8" id="Ysx-eZ-GID"/>
                                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="3" id="nIh-6w-ZyB"/>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="3" id="yMC-FB-nDl"/>
-                                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="2" id="zW7-0X-7zu"/>
                                                 </constraints>
                                                 <color key="progressTintColor" red="1" green="0.89954007290000004" blue="0.41721410079999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <color key="trackTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
