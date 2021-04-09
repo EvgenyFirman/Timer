@@ -7,13 +7,14 @@
 //
 
 import UIKit
-
+import AVFoundation
 class ViewController: UIViewController {
     
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var progressBar: UIProgressView!
+    var player: AVAudioPlayer?
     
-    let numbersDic = ["Soft": 300, "Medium": 420, "Hard": 630]
+    let numbersDic = ["Soft": 10, "Medium": 420, "Hard": 630]
     
     
     var timer = Timer()
@@ -35,9 +36,8 @@ class ViewController: UIViewController {
         totalTime = numbersDic[hardness]!
         
         timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateCounter), userInfo: nil, repeats: true)
-        
     }
-
+       
     
     @objc func updateCounter() {
         //example functionality
@@ -48,6 +48,9 @@ class ViewController: UIViewController {
             
         } else {
             titleLabel.text = "Done"
+            let url = Bundle.main.url(forResource: "alarm_sound", withExtension: "mp3")
+                     player = try! AVAudioPlayer(contentsOf: url!)
+            player!.play()
         }
     }
  
